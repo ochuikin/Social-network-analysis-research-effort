@@ -1,0 +1,57 @@
+\documentclass[12pt]{extarticle}
+
+\usepackage{wrapfig}
+\usepackage{indentfirst}
+\usepackage{textcomp}
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1,T2A]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{stackengine}
+\newlength\llength
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\newcommand\todo[1]{\textcolor{red}{#1}}
+
+\addto{\captionsenglish}{\renewcommand{\contentsname}{Содержание}}
+
+\addto{\captionsenglish}{\renewcommand{\abstractname}{}}
+
+\addto{\captionsenglish}{\renewcommand{\refname}{Список ссылок}}
+
+
+\addto{\captionsenglish}{\renewcommand{\listfigurename}{Список иллюстраций}
+}
+
+\addto{\captionsenglish}{\renewcommand{\figurename}{Рис.}
+}
+
+\usepackage{pdfpages}
+
+\begin{document}
+
+\includepdf[pages={1}]{recources/title.pdf}
+
+\include{introduction}
+
+\include{powerlow}
+
+\include{thebibliography}
+
+\end{document}
